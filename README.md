@@ -3,7 +3,7 @@
 Google's original pretrained word2vec model consists of 3mil entries and its 
 binary representation as a file is 3.5GB.  Both the size and the fact
 that it is in a non-standard binary representation makes this model difficult
-to work with - you basically have to take the plunge and learn 'gensim'.
+to work with - you basically have to take the plunge and learn '[gensim](https://radimrehurek.com/gensim/models/word2vec.html)'.
 
 The goal of this project is to provide a smaller, easier to work with model
 for the use in Python.  The model consists of a pickled Pandas DataFrame where 
