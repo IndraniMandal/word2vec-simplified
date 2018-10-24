@@ -19,6 +19,6 @@ model to our DataFrame based model.
 
 ## Prerequisites
 
-1. The model and the code assumes that you have Python 3.x installed.
-2. The conversion code assumes that you have downloaded and unzipped Googles 
+1. The model and the code assumes that you have Python 3.x installed. I highly recommend installing [Anaconda](https://www.anaconda.com/download), all data science packages and Python 3.x will be installed in this environment.
+2. The conversion code assumes that you have downloaded and unzipped Google's 
 original model GoogleNews-vectors-negative300.bin from [here](https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz).
