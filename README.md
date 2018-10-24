@@ -14,8 +14,8 @@ the words in this model. This model only contains single, lower case words with 
 This github repository provides the code for the conversion from the Google 
 model to our DataFrame based model.
 
-convert.py - Python program to convert the Google model
-word2vec.py - Example program that uses our DataFrame based model
+* **convert.py** - Python program to convert the Google model
+* **word2vec.py** - Example program that uses our DataFrame based model
 
 ## Prerequisites
 
