@@ -35,8 +35,13 @@ if __name__ == "__main__":
     result = cosine_similarity([tree_vec],
                                [branch_vec,triangle_vec])
 
-    print("Similarity tree-branch: {}".format(result[0,0]))
-    print("Similarity tree-triangle: {}".format(result[0,1]))
+    tree_branch_sim = result[0,0]
+    tree_triangle_sim = result[0,1]
+
+    if tree_branch_sim > tree_triangle_sim:
+        print("branch is more related to tree than triangle")
+    else:
+        print("triangle is more related to tree than branch")
 
     # let's try the classic example: king-man+woman = queen
     king_vec = word2vec.loc['king']
@@ -46,8 +51,12 @@ if __name__ == "__main__":
 
     female_king_vec = king_vec - man_vec + woman_vec
 
-    result = cosine_similarity([female_king_vec],
+    result = cosine_similarity([female_king_vec,king_vec],
                                [queen_vec])
 
-    print("Similarity female king - queen: {}".format(result[0,0]))
+    if result[0,0] > result[1,0]:
+        print("female king is more similar to queen than king")
+    else:
+        print("king is more similar to queen than female king")
+
 
