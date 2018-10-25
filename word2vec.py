@@ -54,7 +54,10 @@ if __name__ == "__main__":
     result = cosine_similarity([female_king_vec,king_vec],
                                [queen_vec])
 
-    if result[0,0] > result[1,0]:
+    female_king_queen_sim = result[0,0]
+    king_queen_sim = result[1,0]
+
+    if female_king_queen_sim > king_queen_sim:
         print("female king is more similar to queen than king")
     else:
         print("king is more similar to queen than female king")
