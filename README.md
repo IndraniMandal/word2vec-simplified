@@ -16,6 +16,7 @@ model to our DataFrame based model.
 
 * **convert.py** - Python program to convert the Google model
 * **word2vec.py** - Example program that uses our DataFrame based model
+* **Exploring Word2Vec.ipynb** -- Jupyter notebook looking at various aspects of our model
 
 ## Prerequisites
 
